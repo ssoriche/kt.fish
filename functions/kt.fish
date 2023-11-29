@@ -18,7 +18,7 @@ function kt
     end
 
     if test -f "$file"
-        set -gx KUBECONFIG="$file"
+        set -gx KUBECONFIG "$file"
         return
     end
 
